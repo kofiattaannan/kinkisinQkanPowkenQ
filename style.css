@@ -23,8 +23,8 @@ body {
 .bg-left {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 33.33vw;
+  /*left: 0;*/
+  /*width: 33.33vw;*/
   height: 100vh;
   background-image: url("images/haikei_01.webp");
   background-size: cover;
@@ -36,8 +36,8 @@ body {
 .bg-center {
   position: fixed;
   top: 0;
-  left: 33.33vw;
-  width: 33.33vw;
+  /*left: 33.33vw;*/
+  /*width: 33.33vw;*/
   height: 100vh;
   background-image: url("images/haikei_02.webp");
   background-size: cover;
@@ -49,8 +49,8 @@ body {
 .bg-right {
   position: fixed;
   top: 0;
-  left: 66.66vw;
-  width: 33.33vw;
+  /*left: 66.66vw;
+  width: 33.33vw;*/
   height: 100vh;
   background-image: url("images/haikei_03.webp");
   background-size: cover;
@@ -149,9 +149,9 @@ footer {
   width: 100%;
   background-color: #a3c1ad;
   text-align: center;
-  padding: 10px;
+  padding: 8px;
   font-size: 0.9em;
-  line-height: 1.5;
+  line-height: 1.0;
   z-index: 9999;
 }
 
