@@ -101,43 +101,34 @@ header h1 {
 /* お知らせスライダー */
 .notice-slider {
   position: relative;
-  z-index: 10;
-  height: 120px;
-  margin-top: 40px;
   overflow: hidden;
+  height: 50px; /* 必要に応じて調整 */
   background-color: #fff8dc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .notice-box {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  white-space: nowrap;
   padding: 10px 20px;
   background-color: #a3c1ad;
   color: #fff;
   font-weight: bold;
   border-radius: 8px;
-  white-space: nowrap;
-  animation: slideIn 2s ease-out forwards;
+  animation: slideLeft 10s linear infinite;
 }
 
 .notice {
+  display: inline-block;
   font-size: 1.5em;
-  padding: 4px 12px;
-  line-height: 1.0;
+  padding: 0 20px;
 }
 
 @keyframes slideIn {
   0% {
-    opacity: 0;
-    transform: translateX(-50%) translateY(-20px);
+    left: 100%;
   }
   100% {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
+    left: -100%;
   }
 }
 
