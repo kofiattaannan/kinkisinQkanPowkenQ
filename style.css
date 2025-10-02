@@ -142,12 +142,14 @@ main p {
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   background-color: #a3c1ad;
   text-align: center;
-  padding: 5px 10px; /* 余白も少し狭くすると効果的 */
+  padding: 10px;
   font-size: 0.9em;
   line-height: 0.5;  /* 行間を狭くする */
+  z-index: 100;
 }
 
 /* スマホ対応（レスポンシブ） */
