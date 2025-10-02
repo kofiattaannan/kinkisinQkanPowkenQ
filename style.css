@@ -10,34 +10,53 @@ body {
 
 /* 背景3分割 */
 .bg {
-  position: absolute;
+  position: fixed;               /* 背景として固定表示に変更 */
   top: 0;
-  bottom: 0;
-  height: 100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -10;
 }
 
 .bg-left {
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 33.33%;
+  width: 33.33vw;
+  height: 100vh;
   background-image: url("images/haikei_01.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: left center;
+  z-index: -10;
 }
 
 .bg-center {
-  left: 33.33%;
-  width: 33.33%;
+  position: fixed;
+  top: 0;
+  left: 33.33vw;
+  width: 33.33vw;
+  height: 100vh;
   background-image: url("images/haikei_02.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
+  z-index: -10;
 }
 
 .bg-right {
-  right: 0;
-  width: 33.33%;
+  position: fixed;
+  top: 0;
+  left: 66.66vw;
+  width: 33.33vw;
+  height: 100vh;
   background-image: url("images/haikei_03.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: right center;
+  z-index: -10;
 }
 
 /* メインコンテンツ */
