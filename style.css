@@ -10,13 +10,7 @@ body {
 
 .bg {
   position: absolute;
-  /*position: fixed;*/
-  top: 0;
-  bottom: 0;
-  height: 100%;  /* 追加 */
-  background-repeat: repeat-y;
-  background-size: cover;
-  z-index: -1;
+  z-index: -10;
 }
 
 .bg-left {
@@ -115,13 +109,10 @@ header p {
   }
   100% {
     right: 50%;
-    /*transform: translateX(50%);*/
+    transform: translateX(50%);
     opacity: 1;
   }
 }
-/*main {*/
-  /*padding: 20px;*/
-/*}*/
 
 main h2 {
   font-size: 0.8em;
@@ -141,7 +132,7 @@ main p {
 }
 
 footer {
-  position: fixed;
+  position: relative;  /* fixedから変更 */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -149,8 +140,8 @@ footer {
   text-align: center;
   padding: 10px;
   font-size: 0.9em;
-  line-height: 1.5;  /* 行間を狭くする */
-  z-index: 9999; /* 最前面に */
+  line-height: 1.5;
+  z-index: 10;         /* 背景より前に出す */
 }
 
 /* スマホ対応（レスポンシブ） */
