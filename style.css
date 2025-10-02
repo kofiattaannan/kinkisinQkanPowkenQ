@@ -12,7 +12,8 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  height: 100vh;  /* 追加 */
+  height: auto;  /* 追加 */
+  min-height: 100vh;
   background-repeat: repeat-y;
   background-size: cover;
   z-index: 0;
@@ -84,7 +85,8 @@ header p {
 .notice-slider {
   position: relative;
   z-index: 10;  /* 背景より前面に出るように */
-  height: 95px;
+  height: 120px;
+  margin-top: 40px; /* 背景と重ならないように */
   overflow: hidden;
   background-color: #fff8dc;
   display: flex;
@@ -111,7 +113,7 @@ header p {
   }
   100% {
     right: 50%;
-    transform: translateX(50%);
+    /*transform: translateX(50%);*/
     opacity: 1;
   }
 }
