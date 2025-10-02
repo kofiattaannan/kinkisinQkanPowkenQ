@@ -9,14 +9,15 @@ body {
 }
 
 .bg {
-  position: absolute;
+  /*position: absolute;*/
+  position: fixed;
   top: 0;
   bottom: 0;
   height: auto;  /* 追加 */
   min-height: 100vh;
   background-repeat: repeat-y;
   background-size: cover;
-  z-index: 0;
+  z-index: -1;
 }
 
 .bg-left {
