@@ -10,26 +10,31 @@ body {
 
 .bg {
   position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -10;
 }
 
 .bg-left {
   left: 0;
-  width: 33.33%;
+  /*width: 33.33%;*/
   background-image: url("images/haikei_01.webp");
   background-position: left center;
 }
 
 .bg-center {
   left: 33.33%;
-  width: 33.33%;
+  /*width: 33.33%;*/
   background-image: url("images/haikei_02.webp");
   background-position: center center;
 }
 
 .bg-right {
   right: 0;
-  width: 33.33%;
+  /*width: 33.33%;*/
   background-image: url("images/haikei_03.webp");
   background-position: right center;
 }
@@ -39,6 +44,7 @@ main {
   position: relative;
   z-index: 1;
   padding: 60px 20px;
+  padding-bottom: 100px; /* ← フッターが隠れないように */
 }
 
 @media screen and (max-width: 600px) {
@@ -132,7 +138,7 @@ main p {
 }
 
 footer {
-  position: relative;  /* fixedから変更 */
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -141,7 +147,7 @@ footer {
   padding: 10px;
   font-size: 0.9em;
   line-height: 1.5;
-  z-index: 10;         /* 背景より前に出す */
+  z-index: 9999;
 }
 
 /* スマホ対応（レスポンシブ） */
