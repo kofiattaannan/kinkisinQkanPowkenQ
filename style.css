@@ -123,7 +123,7 @@ header h1 {
   padding: 0 20px;
 }
 
-@keyframes slideIn {
+@keyframes slideLeft {
   0% {
     left: 100%;
   }
