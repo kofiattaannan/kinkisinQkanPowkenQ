@@ -9,11 +9,12 @@ body {
 }
 
 .bg {
-  /*position: absolute;*/
-  position: fixed;
+  position: absolute;
+  /*position: fixed;*/
   top: 0;
   bottom: 0;
-  height: auto;  /* 追加 */
+  width: 33.33%;
+  height: 100%;  /* 追加 */
   min-height: 100vh;
   background-repeat: repeat-y;
   background-size: cover;
@@ -148,8 +149,8 @@ footer {
   text-align: center;
   padding: 10px;
   font-size: 0.9em;
-  line-height: 0.5;  /* 行間を狭くする */
-  z-index: 100;
+  line-height: 1.5;  /* 行間を狭くする */
+  z-index: 9999; /* 最前面に */
 }
 
 /* スマホ対応（レスポンシブ） */
