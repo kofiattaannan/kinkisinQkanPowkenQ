@@ -92,7 +92,8 @@ header p {
 
 .notice-box {
   position: absolute;
-  right: -100%;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 10px 20px;
   background-color: #a3c1ad;
   color: #fff;
@@ -104,13 +105,12 @@ header p {
 
 @keyframes slideIn {
   0% {
-    right: -100%;
     opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
   }
   100% {
-    right: 50%;
-    transform: translateX(50%);
     opacity: 1;
+    transform: translateX(-50%) translateY(0);
   }
 }
 
