@@ -21,21 +21,21 @@ body {
 .bg-left {
   left: 0;
   width: 33.33%;
-  background-image: url("images/haikei_01.jpg");
+  background-image: url("images/haikei_01.webp");
   background-position: left center;
 }
 
 .bg-center {
   left: 33.33%;
   width: 33.33%;
-  background-image: url("images/haikei_02.jpg");
+  background-image: url("images/haikei_02.webp");
   background-position: center center;
 }
 
 .bg-right {
   right: 0;
   width: 33.33%;
-  background-image: url("images/haikei_03.jpg");
+  background-image: url("images/haikei_03.webp");
   background-position: right center;
 }
 
