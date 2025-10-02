@@ -13,9 +13,7 @@ body {
   /*position: fixed;*/
   top: 0;
   bottom: 0;
-  width: 33.33%;
   height: 100%;  /* 追加 */
-  min-height: 100vh;
   background-repeat: repeat-y;
   background-size: cover;
   z-index: -1;
@@ -65,6 +63,8 @@ header {
   background-color: #a3c1ad;
   padding: 10px 30px;	/* 上下10px、左右20pxに変更 */
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
 header h1 {
