@@ -12,6 +12,7 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
+  height: 100vh;  /* 追加 */
   background-repeat: repeat-y;
   background-size: cover;
   z-index: 0;
@@ -50,7 +51,7 @@ main {
     background-size: 50%, 50%, 50%;
   }
   .bg {
-    /*display: none;*/
+    background-attachment: scroll !important;
   }
   footer {
     position: static;
