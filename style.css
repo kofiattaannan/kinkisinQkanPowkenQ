@@ -50,7 +50,7 @@ main {
     background-size: 50%, 50%, 50%;
   }
   .bg {
-    display: none;
+    /*display: none;*/
   }
   footer {
     position: static;
